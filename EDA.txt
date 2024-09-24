@@ -1,0 +1,26 @@
+Exploratory data analysis, often referred to as EDA, is the initial step in our data analysis process. 
+Here we inspect, clean, and transform our data to discover patterns, anomalies, and relationships. 
+The step is crucial because it helps us understand the structure of our data, any anomalies present, or any outliers that might influence our results.
+Why is EDA important? Well, without understanding our data, we could make incorrect assumptions which might lead to flawed analysis or modeling. 
+By conducting EDA, we can ensure that our subsequent steps, like data processing and modeling, are based on accurate insights.
+Statistical summaries offer a snapshot of our data's main properties by providing a concise description.
+Think of it as a way to get a quick overview of a large dataset without diving into every individual data point. 
+First, we have the measures of central tendencies. These describe the center of our data distribution. 
+The most common measures are the mean, which is the average, the median, which is the middle value, and the mode, which is the most frequently occurring value. 
+Next, we have measures of dispersion. These provide insights into how spread out our data is. 
+This includes the variance which measures the average squared deviation from the mean, the standard deviation which is square root of the variance, and gives us an idea of the average deviation from the mean, and the range which is simply the difference between the highest and the lowest values. 
+We have measures that describe the shape of our data distribution, skewness tells us about the direction and degree of asymmetry, while kurtosis measures the tailedness of our distribution. 
+Lastly, measures of position, like percentiles and cortiles help us to understand where a particular data point stands in relation to others. 
+The main purpose of statistical summaries is to simplify large datasets, facilitate comparisons, and guide subsequent analysis. 
+However, it is essential to note that while they are useful, they have limitations. 
+They might not capture all the nuances of a dataset, especially if it is varied and complex, and they can be sensitive to outliers. 
+Outliers are those data points that significantly differ from the rest. 
+Unaddressed outliers can skew our analysis and lead us astray drawing conclusions that might not hold true for the general dataset. 
+Once detected, what do we do with outliers? 
+Depending on the context, we might remove them, impute values to replace them, or analyze them separately. 
+However, a word of caution, not all outliers are errors. Sometimes they represent rare but valuable information that could be crucial for our analysis. 
+We define boundaries using IQR. Any data point that lies below the lower boundary, which is 1.5 times the IQR below the first cortile or above the upper boundary, which is 1.5 times the IQR above the third cortile is considered a potential outlier. 
+One of the greatest advantages of using IQR is its robustness. 
+It is not affected by extreme values as it does not rely on the mean or standard deviation, making it ideal for skewed distributions. 
+It is crucial to interpret outliers within the context of the data. 
+While the IQR method provides a mathematical way to detect outliers, the significance and the handling of these points require domain knowledge.
